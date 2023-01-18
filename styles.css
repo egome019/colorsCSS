@@ -39,9 +39,83 @@ h1{
     border-bottom: 200px solid rgba(244, 35, 123, .6);
 }
 
-.hsl{}
+.hsl{
+    border-bottom: 100px solid hsl(235, 36%, 47%);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 200px;
+}
 
-.hsla{}
+.hsla{
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: hsla(120, 100%, 15%, .5);
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid hsla(170, 75%, 25%, .7);
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
 
-.cross-brows{}
+.hsla::before{
+    top: -45px;
+    left: -65px;
+    content: " ";
+    position: absolute;
+    display: block;
+    color: hsla(120, 75%, 25%, .9);
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid hsla(200, 55%, 25%, .9);
+    border-left: 30px solid transparent;
+    transform: rotate(-35deg);
+}
+
+.hsla::after{
+    top: 3px;
+    left: -105px;
+    content: " ";
+    position: absolute;
+    display: block;
+    color: hsla(350, 25%, 100%, .8);
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid hsla(200, 55%, 25%, .8);
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+}
+
+.cross-brows{
+    position: relative;
+    width: 212px;
+    height: 100px;
+    box-sizing: content-box;
+}
+
+.cross-brows::before, .cross-brows::after{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    box-sizing: content-box;
+    content: '';
+    top: 0;
+    left: 0;
+    border: 20px solid coral;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+
+.cross-brows::after{
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+
 
