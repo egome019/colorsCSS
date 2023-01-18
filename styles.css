@@ -2,3 +2,46 @@ body{
     margin: 0;
     padding: 0;
 }
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.container{
+   background-color: rgb(255, 255, 255); 
+}
+
+.hexa{
+    width: 200px;
+    height: 200px;
+    background-color: #936f90;
+}
+
+.transparency-hexa{
+    width: 150px;
+    height: 150px;
+    background-color: #0000ff80;
+    border-radius: 50%;
+}
+
+.rgb{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(169, 200, 10);
+    border-radius: 200px/75px;
+}
+
+.rgba{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid rgba(244, 35, 123, .6);
+}
+
+.hsl{}
+
+.hsla{}
+
+.cross-brows{}
+
