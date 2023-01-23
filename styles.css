@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(rgb(231,100,10), rgb(90, 243, 150), rgb(100,200,233));
 }
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,7 +9,7 @@ h1{
 }
 
 .container{
-   background-color: rgb(100, 155, 255); 
+   background-color: #ffff; 
    position: relative;
    width: 100%;
    height: 100vh;
@@ -19,7 +20,7 @@ h1{
 .hexa{
     width: 200px;
     height: 200px;
-    background-color: #936f90;
+    background: linear-gradient(hsl(232, 10%, 50%), hsl(23, 90%, 25%), hsl(132, 50%, 90%));
     transform: translate(251px);
     position: absolute;
     top: 5%;
@@ -30,7 +31,7 @@ h1{
 .transparency-hexa{
     width: 150px;
     height: 150px;
-    background-color: #0000ff80;
+    background: linear-gradient(hsl(132, 10%, 50%), hsl(213, 90%, 25%), hsl(32, 50%, 90%));
     border-radius: 50%;
     transform: rotate(46deg) translate(251px);
     position: absolute;
@@ -42,7 +43,7 @@ h1{
 .rgb{
     width: 500px;
     height: 100px;
-    background-color: rgb(169, 200, 10);
+    background: linear-gradient(hsl(22, 50%, 50%), hsl(229, 20%, 25%), hsl(232, 10%, 100%));
     border-radius: 200px/75px;
     transform: rotate(91deg) translate(251px) rotate(-91deg);
     position: absolute;
@@ -56,7 +57,7 @@ h1{
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 200px solid rgba(244, 35, 123, .6);
+    border-bottom: 200px solid #ff3244;
     transform: rotate(136deg) translate(250px) rotate(-136deg);
     position: absolute;
     top: 57%;
@@ -65,9 +66,10 @@ h1{
 }
 
 .hsl{
-    border-bottom: 100px solid hsl(235, 36%, 47%);
+    border-bottom: 100px solid #2122ff;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
+    /* border-image: linear-gradient(rgba(244, 135, 123, .6), rgba(4, 15, 223, .6), rgba(44, 235, 123, .6)); */
     height: 0;
     width: 200px;
     transform: rotate(181deg) translate(250px) rotate(-181deg);
@@ -81,11 +83,10 @@ h1{
     margin: 50px 0;
     position: relative;
     display: block;
-    color: hsla(120, 100%, 15%, .5);
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid hsla(170, 75%, 25%, .7);
+    border-bottom: 70px solid hsla(200, 75%, 25%, .7);
     border-left: 100px solid transparent;
     transform: rotate(35deg);
     top: 45%;
@@ -103,7 +104,7 @@ h1{
     width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-bottom: 80px solid hsla(200, 55%, 25%, .9);
+    border-bottom: 80px solid hsla(10, 5%, 75%, .9);
     border-left: 30px solid transparent;
     transform: rotate(-35deg);
 }
@@ -114,11 +115,10 @@ h1{
     content: " ";
     position: absolute;
     display: block;
-    color: hsla(350, 25%, 100%, .8);
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
-    border-bottom: 70px solid hsla(200, 55%, 25%, .8);
+    border-bottom: 70px solid hsla(1, 55%, 25%, .8);
     border-left: 100px solid transparent;
     transform: rotate(-70deg);
 }
