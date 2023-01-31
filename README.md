@@ -32,7 +32,7 @@ Just an exercise, repo not deployed.
 
 ## Demo
 
-![](assets/css shapes.png)
+![](assets/cssshapes.png)
 
 ## License
 
